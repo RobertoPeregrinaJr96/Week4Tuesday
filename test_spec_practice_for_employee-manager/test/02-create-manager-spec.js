@@ -1,8 +1,8 @@
 const chai = require('chai');
 const expect = chai.expect;
 
-const Employee = require('../employee');
-const Manager = require('../manager');
+const Employee = require('../practice/employee');
+const Manager = require('../practice/manager');
 
 describe('The Manager class', () => {
     let splinter;

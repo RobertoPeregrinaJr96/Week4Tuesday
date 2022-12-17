@@ -3,8 +3,8 @@ const expect = chai.expect;
 const spies = require('chai-spies');
 chai.use(spies);
 
-const Employee = require('../employee');
-const Manager = require('../manager');
+const Employee = require('../practice/employee');
+const Manager = require('../practice/manager');
 
 describe('The calculateBonus(multiplier) method:', () => {
     let splinter;

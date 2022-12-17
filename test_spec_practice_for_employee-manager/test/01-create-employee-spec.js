@@ -1,7 +1,7 @@
 const chai = require('chai');
 const expect = chai.expect;
 
-const Employee = require('../employee');
+const Employee = require('../practice/employee');
 
 describe('The Employee class', () => {
     let leo;

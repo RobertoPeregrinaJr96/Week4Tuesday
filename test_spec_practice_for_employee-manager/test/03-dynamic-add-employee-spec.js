@@ -3,15 +3,15 @@ const expect = chai.expect;
 const spies = require('chai-spies');
 chai.use(spies);
 
-const Employee = require('../employee');
-const Manager = require('../manager');
+const Employee = require('../practice/employee');
+const Manager = require('../practice/manager');
 
 describe('Adding employees dynamically', () => {
     let splinter;
     beforeEach(() => {
         splinter = new Manager('Splinter', 100000, 'Sensei');
     });
-
+    // WE LITERALLY HAVE TO MUST IN IN THE CURLY BRACES OF THE CONSTRUCTOR OF EMPLOYEE CLASS
     it('should be called from the Employee constructor if a manager is passed in', () => {
         const spy = chai.spy.on(splinter, 'addEmployee');
         const leo = new Employee('Leonardo', 90000, 'Ninja', splinter);
